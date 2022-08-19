@@ -2,7 +2,7 @@ server:
   port: 8085
   servlet:
     context-path: /api-weather/
- info:
-   autor: William
-   mail: warwilliam007@gmail.com
- Country: Denmark
+info:
+  author: Blabla
+  mail: blabla@gmail.com
+country: Brazil
