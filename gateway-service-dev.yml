@@ -15,3 +15,4 @@ spring:
           uri: lb://USUARIO-SERVICE
           predicates:
            - Path=/api-usuario/**
+        
