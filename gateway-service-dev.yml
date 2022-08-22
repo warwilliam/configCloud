@@ -15,7 +15,4 @@ spring:
           uri: lb://USUARIO-SERVICE
           predicates:
            - Path=/api-usuario/**
-	  filters:
-            - AddRequestHeader=user-request-header, custom-user-request-header
-            - AddResponseHeader=user-response-header, custom-user-response-header
-
+        
