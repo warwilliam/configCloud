@@ -7,11 +7,11 @@ spring:
       default-filters:
         - name: LogFilter
       routes:
-        - id: moviesroute
+        - id: idmoviesroute
           uri: lb://MOVIES-SERVICE
           predicates:
             - Path=/movies/**
-        - id: catalogroute
+        - id: idcatalogroute
           uri: lb://CATALOG-SERVICE
           predicates:
            - Path=/catalog/**
