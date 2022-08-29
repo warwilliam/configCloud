@@ -1,4 +1,4 @@
 server:
   port: 8085
   servlet:
-  context-path: /movie/
+    context-path: /movie/
