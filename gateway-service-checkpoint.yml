@@ -8,9 +8,9 @@ spring:
         - name: LogFilter
       routes:
         - id: apimoviesroute
-          uri: lb://MOVIE-SERVICE
+          uri: lb://MOVIES-SERVICE
           predicates:
-            - Path=/api-movie/**
+            - Path=/api-movies/**
         - id: apicatalogroute
           uri: lb://CATALOG-SERVICE
           predicates:
