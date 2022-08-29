@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:  
+  cloud:
+    gateway:
+      default-filters:
+        - name: LogFilter
+      routes:
+        - id: apimoviesroute
+          uri: lb://MOVIE-SERVICE
+          predicates:
+            - Path=/api-movie/**
+        - id: apicatalogroute
+          uri: lb://CATALOG-SERVICE
+          predicates:
+           - Path=/api-catalog/**
+        
