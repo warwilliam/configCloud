@@ -1,18 +1,2 @@
 server:
-  port: 8080
-
-spring:  
-  cloud:
-    gateway:
-      default-filters:
-        - name: LogFilter
-      routes:
-        - id: apiweatherroute
-          uri: lb://WEATHER-SERVICE
-          predicates:
-            - Path=/api-weather/**
-        - id: apiusuarioroute
-          uri: lb://USUARIO-SERVICE
-          predicates:
-           - Path=/api-usuario/**
-        
+  port: ${PORT:8080}
