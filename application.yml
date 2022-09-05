@@ -11,7 +11,13 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
+        include: circuitbreakers,circuitbreakerevents,health,info
+  health:
+      circuitbreakers:
+          enabled: true
+  endpoint:
+    health:
+      show-details: always
 info:
   author: William Rodrigues
   mail: warwilliam007@gmail.com
