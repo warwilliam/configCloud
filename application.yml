@@ -34,8 +34,8 @@ management:
     health:
       show-details: always
 info:
-  author: Tulio L. Viglione
-  mail: tulio.l.viglione@gmail.com
+  author: William Antonio Rodrigues
+  mail: warwilliam007@gmail.com
 server:
   port: ${PORT:9999}
 
