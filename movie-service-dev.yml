@@ -1,4 +1,5 @@
 server:
-  port: 8086
+  port: 8085
   servlet:
     context-path: /movie/
+message: Mensagem movie
